@@ -66,8 +66,15 @@
 
 
 //* 6) Escribí un programa que imprima los números pares del 0 al 100. */
-funct
-
+// function paresDelCeroAlCien() {
+//     for (let i = 0; i < 101; i++) {
+//         if (i%2 == 0) {
+//             console.log(i);
+//         }
+//     }
+    
+// }
+// paresDelCeroAlCien();
 /*
 
 
