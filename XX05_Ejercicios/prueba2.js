@@ -9,23 +9,11 @@ function noParesDeContarImparesHasta(numero){
 }
 noParesDeContarImparesHasta(8);
 
-/*Ejercicio1 
-Escribí un programa que le pida al usuario ingresar una frase y la imprima en la consola.
-Recordá que para pedirle al usuario que escriba una frase debés utilizar el método prompt() y para escribir en la consola
-debés utilizar el método console.log().*/
-
-
-const prompt = require('prompt-sync')();
-console.log(prompt('Ingresa una frase: '))
-
 
 /*2) Escribí un programa que le pregunte al usuario su nombre e imprima "Hola " seguido del nombre y un signo de
 exclamación. Por ejemplo, si el usuario ingresa "Pedro" el programa debe imprimir en la consola "Hola Pedro!".
 */
-const prompt = require('prompt-sync')();
-const nombre = prompt('Ingresa tu nombre: ');
 
-console.log(`Hola ${nombre}!`);
 
 function tablaDeMultiplicar(numero) {
 	let i = 0;

@@ -11,3 +11,11 @@ Por ejemplo si el número que pasamos por parámetro es 5, la función deberá i
 
 hasta llegar a multiplicarlo por 10.
 */
+function tablaDeMultiplicar(numero) {
+  let i = 1;
+  while (i <= 10) {
+    console.log(numero + " * " + i + " = " + numero * i);
+    i++;
+  }
+}
+
