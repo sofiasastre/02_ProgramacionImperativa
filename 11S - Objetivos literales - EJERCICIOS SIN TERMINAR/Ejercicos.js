@@ -33,9 +33,29 @@ let arrayCuentas = [
   ];
 
   //Objeto literal banco
-  let banco = { 
-    clientes: arrayCuentas[i],
-    consultarCliente: function(){
-        console.log(this.clientes.titularCuenta);
-    } 
+let banco = 
+{ 
+  clientes: arrayCuentas,
+  consultarCliente: function(titular){
+    for (let i = 0; i < this.clientes.length; i++) {
+      if (this.clientes[i].titularCuenta == titular) {
+          return this.clientes[i];
+      }
+    }        
+  } 
+}
+console.log(banco.consultarCliente('Ansel Ardley'));
+
+
+//* Propiedad única - Crear una función llamada propiedadUnica que reciba un arreglo de objetos como parámetro y un string.Esta deberá retornar un nuevo arreglo de objetos,teniendo como parámetro la propiedad que fue pasada como string */
+
+function propiedadUnica(array, str) {
+  let newArray = []
+  for (let i = 0; i < array.length; i++) { 
+     newArray.push({[str]: array[i][str]})
   }
+  //console.log(str);
+  return newArray
+}
+// let resultado = propiedadUnica(array,'nombre');
+// console.log(resultado);

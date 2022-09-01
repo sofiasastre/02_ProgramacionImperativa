@@ -64,3 +64,54 @@
 // let tipoPalabra = verificarPalabra ('hola')
 // console.log(tipoPalabra);
 
+ // Ejercicio 3):
+        // Vamos a simular un E-commerce
+        // Para eso, necesitamos crear un arreglo que contendra los productos
+        // Cada producto tendra ( nombre, descripcion, precio, cantidad,)
+        // Ahora, como dueño de la empresa, queremos saber cuanto dinero nos 
+        // ingresaria si se venden todos los productos que tenemos en stock
+        // Ademas de eso, nos dimos cuenta que nuestros productos no tienen ID
+        // para ello deberemos tambien recorrer el arreglo y agregarle a cada producto 
+        // un ID que empieze en 1 y que vaya incrementando
+        // Por ultimo nos piden que si hay algun producto que sea "notebook", 
+        // debemos aumenta el precio en un 30%
+
+        console.log("Ejercicio 3")
+        console.log("=========")
+
+let productosPepito = [
+    {
+        nombre: "celular",
+        descripcion: "Es un celular",
+        precio: 200,
+        cantidad: 10
+    },
+    {
+        nombre: "notebook",
+        descripcion: "Es una notebook",
+        precio: 300,
+        cantidad: 5
+    },
+    {
+        nombre: "zapatilla",
+        descripcion: "Es una zapatilla",
+        precio: 50,
+        cantidad: 7
+    },
+]
+
+function aumentarUn30(array) {
+    let precio1 = 0;
+    for (let i = 0; i < array.length; i++) {
+        //console.log(array[i].nombre)
+        if (array[i].nombre =="notebook") {
+            //console.log("entro")
+            precio1 = array[i].precio
+            //console.log(cuando i es igual a ${i}, el valor es ${precio1})
+            //precio1 = precio1 * 0.3
+            console.log(precio1)
+            array[i].precio = array[i].precio + array[i].precio * 0.3
+        }
+    }return array
+}
+console.table(aumentarUn30(productosPepito))
